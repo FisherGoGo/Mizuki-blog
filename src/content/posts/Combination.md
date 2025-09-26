@@ -164,7 +164,7 @@ $$C_{n}=\frac{1}{n+1}\left(\begin{matrix}2n\\n\end{matrix}\right)=\left(\begin{m
 	- 那么此时每一条从 $(0,0)$ 到 $(n,n)$ 的坏路径都唯一对应着一条从 $(-1,1)$ 到 $(n,n)$ 的路径，这个路径的方案数是 $\binom{2n}{n-1}$ 
 
 $$\begin{aligned} \binom{2n}{n} - \binom{2n}{n-1}   
- =&\frac{(2n)!}{n!n!} - \frac{(2n)!}{(n-1)!(n+1)!}
+=&\frac{(2n)!}{n!n!} - \frac{(2n)!}{(n-1)!(n+1)!}
 \\&= \frac{(2n)!}{n!(n-1)!} \left( \frac{1}{n} - \frac{1}{n+1} \right) 
 \\&= \frac{(2n)!}{n!(n-1)!} \frac{1}{n(n+1)} 
 \\&= \frac{1}{n+1} \frac{(2n)!}{n!n!} 
