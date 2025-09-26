@@ -380,3 +380,15 @@ html {
 :root:not(.dark) .custom-md spoiler {
   --_spoiler-mask: color-mix(in oklch, var(--primary) 55%, white 45%);
 }
+
+/*
+ * 最终解决方案：
+ * 针对被 <p> 标签包裹的 KaTeX 块级公式
+ * 我们直接将这个 <p> 标签居中
+*/
+p:has(> .katex-display) {
+  display: flex;
+  justify-content: center;
+}
+
+

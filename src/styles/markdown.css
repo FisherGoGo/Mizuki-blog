@@ -124,3 +124,11 @@
 .custom-md .expressive-code ol li::marker {
     @apply text-inherit;
 }
+
+/* 强制 KaTeX 块级公式居中显示 */
+.katex-display {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* 添加这个以防万一 */
+}

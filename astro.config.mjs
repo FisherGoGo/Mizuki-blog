@@ -5,6 +5,8 @@ import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-s
 import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
 import swup from "@swup/astro";
 import { defineConfig } from "astro/config";
+import remarkMath from 'remark-math';     // 导入 remark-math
+import rehypeKatex from 'rehype-katex';   // 导入 rehype-katex
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
@@ -114,7 +116,11 @@ export default defineConfig({
 		sitemap(),
 	],
 	markdown: {
+		remarkPlugins: [remarkMath],  
+		rehypePlugins: [rehypeKatex],  
 		remarkPlugins: [
+			   
+   			   
 			remarkMath,
 			remarkReadingTime,
 			remarkExcerpt,
