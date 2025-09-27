@@ -1,0 +1,9 @@
+{
+	"title": "Cherished Memory",
+	"hidden": false,
+	"date": "2030-01-01",
+	"location": "World",
+	"tags": ["Memory"],
+	"layout": "masonry",
+	"columns": 3
+}
